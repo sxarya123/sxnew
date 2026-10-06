@@ -40,7 +40,7 @@ Buka http://localhost:8000 di browser.
 
 - Scale Xpert diposisikan sebagai autopilot software untuk SEO dan Reddit visibility.
 - Hero gradient dengan ilustrasi transparan violet/champagne.
-- Carousel results memiliki autoplay satu detik, panah, swipe dan pause/play. Gambar dummy diberi label Demo.
+- Bagian hasil kerja menampilkan empat kartu studi kasus demo Scale Xpert dengan grafik animasi saat masuk layar. Semua angka contoh diberi label ilustratif; grafik historis klien ditampilkan terpisah.
 - Services berisi ilustrasi SEO/Reddit dan dua alur kerja empat langkah.
 - Community Preview hanya ada di Services; informasi community lainnya tetap pada homepage.
 - Header dan shortcut Reddit/Discord tampil; footer disembunyikan.

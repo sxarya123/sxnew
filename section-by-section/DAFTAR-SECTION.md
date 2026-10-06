@@ -5,7 +5,7 @@ Setiap file di sini adalah salinan bagian HTML dari halaman utuh di akar reposit
 ## index.html
 - `01-autopilot-software-for-seo-and-reddit-visibil.html` — Autopilot software for SEO and Reddit visibility.
 - `02-visibility-service-strip.html` — Visibility service strip
-- `03-make-your-website-discoverable-make-your-bran.html` — Make your website discoverable. Make your brand part of the conversation.
+- `03-make-your-website-discoverable-make-your-bran.html` — What you get: Reddit visibility, SEO, authority, AI search, and progress.
 - `04-a-clear-starting-point-for-ongoing-visibility.html` — A clear starting point for ongoing visibility.
 - `05-client-results-reviews.html` — Client Results & Reviews
 - `06-hear-from-the-people-who-worked-with-us.html` — Hear from the people who worked with us.

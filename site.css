@@ -344,7 +344,7 @@ body:not(.et-fb):has(.et-l--header .sxa-site .sxa-header) #et-main-area { paddin
 .sxa-site .sxa-nav a { color: #29202e; font-size: 14px; font-weight: 560; }
 .sxa-site .sxa-header .sxa-btn { min-height: 42px; padding: 9px 21px; background: transparent; color: #17121d; border: 1.5px solid #17121d; }
 .sxa-site .sxa-header .sxa-btn:hover { color: #fff; background: #17121d; }
-.sxa-site .sxa-hero { position: relative; isolation: isolate; min-height: 735px; padding: clamp(82px, 9vw, 136px) 0 112px; overflow: hidden; border-radius: 0 0 38px 38px; background: linear-gradient(105deg, #f8e3f6 0%, #f8eafa 55%, #abb5ee 100%); }
+.sxa-site .sxa-hero { position: relative; isolation: isolate; min-height: 735px; padding: clamp(82px, 9vw, 136px) 0 112px; overflow: hidden; border-radius: 0; background: linear-gradient(105deg, #f8e3f6 0%, #f8eafa 55%, #abb5ee 100%); }
 .sxa-site .sxa-hero::before { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(120deg, #fce8f4 0%, #eee4fb 52%, #dbe8fc 100%); }
 .sxa-site .sxa-hero::after { content: none; }
 .sxa-site .sxa-hero-layout { display: block; position: relative; }
@@ -896,3 +896,158 @@ body:not(.et-fb):has(.et-l--header .sxa-site .sxa-header) #et-main-area { paddin
 }
 
 .sxa-site .sxa-community-preview-section .sxa-preserved-preview { margin-top: 0; }
+/* Screenshot feedback: full-width heroes and a standalone Reddit metrics section. */
+.sxa-site .sxa-hero,
+.sxa-site .sxa-page-hero { border-radius: 0; }
+.sxa-site .sxa-reddit-metrics { background: #f7f1fb; }
+.sxa-site .sxa-reddit-metrics-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.sxa-site .sxa-reddit-metric { min-height: 260px; padding: clamp(25px, 3vw, 39px); border: 1px solid #e5d8eb; border-radius: 22px; background: #fff; }
+.sxa-site .sxa-reddit-metric--highlight { background: #241630; color: #fff; border-color: #241630; }
+.sxa-site .sxa-reddit-metric-index { color: #8b4aa0; font-size: 12px; font-weight: 760; letter-spacing: .12em; text-transform: uppercase; }
+.sxa-site .sxa-reddit-metric--highlight .sxa-reddit-metric-index { color: #d6a5ec; }
+.sxa-site .sxa-reddit-metric h3 { margin-top: 32px; font-size: clamp(24px, 2.5vw, 33px); line-height: 1.12; }
+.sxa-site .sxa-reddit-metric--highlight h3 { margin-top: 7px; }
+.sxa-site .sxa-reddit-metric--highlight h3 { color: #fff; }
+
+/* Four clearly labeled Scale Xpert demo stories, inspired by a case-study rail. */
+.sxa-site .sxa-stories-section { background: #f6f3fb; }
+.sxa-site .sxa-story-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin-top: 36px; }
+.sxa-site .sxa-story-card { min-width: 0; overflow: hidden; border: 1px solid #e6e2eb; border-radius: 22px; background: #fff; box-shadow: 0 16px 38px #3320440b; }
+.sxa-site .sxa-story-chart { position: relative; height: 235px; overflow: hidden; padding: 43px 8px 10px; background: #f8f9fc; border-bottom: 1px solid #ece9f1; }
+.sxa-site .sxa-story-chart img { width: 100%; height: 100%; object-fit: contain; background: #fff; border-radius: 10px; }
+.sxa-site .sxa-story-demo { position: absolute; z-index: 1; top: 13px; left: 14px; padding: 5px 9px; border: 1px solid #e7dbee; border-radius: 99px; background: #fff; color: #70418b; font-size: 11px; font-weight: 760; letter-spacing: .035em; }
+.sxa-site .sxa-story-body { display: flex; flex-direction: column; min-height: 327px; padding: 22px; }
+.sxa-site .sxa-story-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 7px; color: #827b89; font-size: 11px; font-weight: 690; text-transform: uppercase; letter-spacing: .065em; }
+.sxa-site .sxa-story-meta span:last-child { color: #774b93; }
+.sxa-site .sxa-story-card h3 { margin-top: 17px; min-height: 82px; color: #2f2936; font-size: clamp(20px, 1.75vw, 25px); line-height: 1.18; }
+.sxa-site .sxa-story-numbers { display: grid; grid-template-columns: 1.25fr .75fr; gap: 10px; margin-top: 20px; padding-top: 18px; border-top: 1px solid #eae6ee; }
+.sxa-site .sxa-story-numbers div { min-width: 0; }
+.sxa-site .sxa-story-numbers strong { display: block; color: #332343; font-size: clamp(19px, 1.6vw, 24px); line-height: 1.1; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.sxa-site .sxa-story-numbers span { display: block; margin-top: 5px; color: #88808e; font-size: 11px; }
+.sxa-site .sxa-story-body > p { margin-top: auto; padding-top: 21px; color: #706877; font-size: 13px; line-height: 1.5; }
+.sxa-site .sxa-story-disclosure { margin-top: 16px; color: #756d7d; font-size: 12px; line-height: 1.55; }
+.sxa-site .sxa-story-proof { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: center; gap: clamp(22px, 4vw, 54px); margin-top: 54px; padding: clamp(26px, 4vw, 45px); border: 1px solid #e3d8e9; border-radius: 25px; background: #fff; }
+.sxa-site .sxa-story-proof h3 { max-width: 520px; margin-top: 15px; color: #30243b; font-size: clamp(26px, 3vw, 38px); }
+.sxa-site .sxa-story-proof p { max-width: 510px; margin-top: 13px; color: #6e6275; font-size: 15px; line-height: 1.6; }
+.sxa-site .sxa-story-proof .sxa-text-link { display: inline-flex; margin-top: 22px; }
+.sxa-site .sxa-story-proof-image { display: block; width: 100%; padding: 9px; border: 1px solid #e5ddea; border-radius: 16px; background: #f8f6fa; color: #5f3b78; text-align: left; cursor: zoom-in; }
+.sxa-site .sxa-story-proof-image img { width: 100%; height: auto; border-radius: 9px; }
+.sxa-site .sxa-story-proof-image > span { display: flex; justify-content: space-between; padding: 11px 8px 4px; font-size: 13px; font-weight: 720; }
+.sxa-site .sxa-story-proof-image:focus-visible { outline: 3px solid #8959b1; outline-offset: 3px; }
+html.sxa-motion .sxa-site .sxa-story-card.is-visible .sxa-story-chart img { animation: sxa-chart-draw 1.35s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes sxa-chart-draw { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+@media (max-width: 1150px) {
+  .sxa-site .sxa-story-grid { grid-auto-flow: column; grid-auto-columns: minmax(290px, 42%); grid-template-columns: none; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; padding-bottom: 14px; }
+  .sxa-site .sxa-story-card { scroll-snap-align: start; }
+}
+@media (max-width: 760px) {
+  .sxa-site .sxa-story-grid { grid-auto-columns: minmax(270px, 86%); }
+  .sxa-site .sxa-story-proof { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.sxa-motion .sxa-site .sxa-story-card.is-visible .sxa-story-chart img { animation: none; }
+}
+
+/* Home benefits: two, three, two card rhythm with Reddit-first examples. */
+.sxa-site .sxa-benefits-section { background: #fff; }
+.sxa-site .sxa-benefits-head { max-width: 1050px; margin-bottom: 38px; }
+.sxa-site .sxa-benefits-head .sxa-eyebrow { color: #8c438f; }
+.sxa-site .sxa-benefits-head .sxa-h2 { max-width: 910px; margin-top: 14px; font-size: clamp(35px, 4vw, 48px); line-height: 1.08; }
+.sxa-site .sxa-benefits-head .sxa-copy { max-width: 710px; margin-top: 19px; color: #655b6f; }
+.sxa-site .sxa-benefits-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; }
+.sxa-site .sxa-benefit-card { grid-column: span 2; display: flex; flex-direction: column; min-width: 0; min-height: 450px; overflow: hidden; border: 1px solid #e5e0e9; border-radius: 16px; background: #fff; box-shadow: 0 7px 24px #24122b05; transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+.sxa-site .sxa-benefit-card--wide { grid-column: span 3; }
+.sxa-site .sxa-benefit-card:hover { transform: translateY(-5px); border-color: #d7c3df; box-shadow: 0 20px 45px #37214612; }
+.sxa-site .sxa-benefit-intro { position: relative; z-index: 1; padding: clamp(23px, 2.6vw, 33px) clamp(22px, 2.6vw, 33px) 12px; }
+.sxa-site .sxa-benefit-kicker { color: #9253a2; font-size: 10px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.sxa-site .sxa-benefit-card h3 { max-width: 510px; margin-top: 12px; color: #26202d; font-size: clamp(23px, 2.2vw, 31px); line-height: 1.12; }
+.sxa-site .sxa-benefit-card p { max-width: 570px; margin-top: 10px; color: #706776; font-size: 14px; line-height: 1.55; }
+.sxa-site .sxa-benefit-visual { display: flex; align-items: center; justify-content: center; min-height: 215px; margin: auto 17px 17px; padding: 15px; overflow: hidden; border: 1px solid #eee8f1; border-radius: 12px; background: linear-gradient(135deg, #fbf8fd, #f5f2fa); }
+.sxa-site .sxa-mini-window, .sxa-site .sxa-reply-card, .sxa-site .sxa-content-sheet, .sxa-site .sxa-signal-board, .sxa-site .sxa-ai-preview, .sxa-site .sxa-progress-panel { width: min(100%, 465px); border: 1px solid #e4dce9; border-radius: 11px; background: #fff; box-shadow: 0 11px 26px #3c224115; }
+.sxa-site .sxa-mini-window { padding: 11px; }
+.sxa-site .sxa-mini-top { display: flex; align-items: center; gap: 5px; padding: 2px 4px 10px; border-bottom: 1px solid #eee9f1; color: #968c9b; font-size: 10px; }
+.sxa-site .sxa-mini-top span:last-child { margin-left: auto; }
+.sxa-site .sxa-mini-dot { width: 6px; height: 6px; border-radius: 50%; background: #d7cada; }
+.sxa-site .sxa-mini-dot:first-child { background: #ff6948; }
+.sxa-site .sxa-thread-row { display: grid; grid-template-columns: 90px minmax(0, 1fr) auto; gap: 8px; align-items: center; padding: 11px 4px; border-bottom: 1px solid #f0ebf2; color: #5d5363; font-size: 10px; }
+.sxa-site .sxa-thread-row:last-child { border-bottom: 0; }
+.sxa-site .sxa-thread-row b { color: #e96741; font-size: 10px; }
+.sxa-site .sxa-thread-row span { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.sxa-site .sxa-thread-row i { padding: 4px 6px; border-radius: 5px; background: #f5eaf9; color: #85509d; font-size: 9px; font-style: normal; }
+.sxa-site .sxa-reply-card { max-width: 460px; padding: 15px; }
+.sxa-site .sxa-reply-top { display: flex; gap: 8px; align-items: center; color: #554b59; font-size: 11px; }
+.sxa-site .sxa-reply-top > span:last-child { margin-left: auto; color: #a399a9; }
+.sxa-site .sxa-reddit-mark { color: #ff633d; font-size: 19px; line-height: 1; }
+.sxa-site .sxa-reply-line { width: 88%; height: 7px; margin-top: 12px; border-radius: 10px; background: #ece6ef; }
+.sxa-site .sxa-reply-line--short { width: 65%; margin-top: 6px; }
+.sxa-site .sxa-reply-answer { margin-top: 14px; padding: 11px; border-left: 3px solid #a357c4; border-radius: 7px; background: #f9f2fc; }
+.sxa-site .sxa-reply-answer span { color: #8946a4; font-size: 10px; font-weight: 800; }
+.sxa-site .sxa-reply-answer p { margin-top: 4px; color: #4f4458; font-size: 11px; }
+.sxa-site .sxa-reply-answer em { color: #7636a1; font-style: normal; font-weight: 800; }
+.sxa-site .sxa-reply-footer { display: flex; gap: 15px; margin-top: 12px; color: #877c8d; font-size: 10px; }
+.sxa-site .sxa-reply-footer span:last-child { color: #8846a4; }
+.sxa-site .sxa-content-sheet { max-width: 330px; padding: 15px; transform: rotate(-2deg); }
+.sxa-site .sxa-content-sheet > span, .sxa-site .sxa-signal-board > span, .sxa-site .sxa-progress-panel > span { display: block; margin-bottom: 10px; color: #a060ab; font-size: 9px; font-weight: 800; letter-spacing: .12em; }
+.sxa-site .sxa-content-sheet div { display: flex; align-items: center; gap: 9px; padding: 10px 0; border-top: 1px solid #eee8f1; font-size: 10px; }
+.sxa-site .sxa-content-sheet i { color: #ba70c7; font-size: 10px; font-style: normal; }
+.sxa-site .sxa-content-sheet b { color: #504557; }
+.sxa-site .sxa-content-sheet em { margin-left: auto; color: #8c7b98; font-size: 9px; font-style: normal; }
+.sxa-site .sxa-authority-map { position: relative; width: min(100%, 310px); height: 165px; background: linear-gradient(28deg, transparent 49.6%, #dbc9e6 50%, transparent 50.4%), linear-gradient(-28deg, transparent 49.6%, #dbc9e6 50%, transparent 50.4%); }
+.sxa-site .sxa-authority-node { position: absolute; padding: 8px 10px; border: 1px solid #e3d3ec; border-radius: 9px; background: #fff; color: #6b4a7b; font-size: 10px; font-weight: 750; box-shadow: 0 8px 19px #55316414; }
+.sxa-site .sxa-authority-node--top { top: 0; left: 35%; }
+.sxa-site .sxa-authority-node--left { top: 42%; left: 0; }
+.sxa-site .sxa-authority-node--center { top: 40%; left: 37%; background: #8246a6; color: #fff; }
+.sxa-site .sxa-authority-node--right { top: 70%; right: 0; }
+.sxa-site .sxa-signal-board { max-width: 320px; padding: 17px; }
+.sxa-site .sxa-signal-board div { display: grid; grid-template-columns: 85px 1fr; gap: 10px; align-items: center; margin-top: 15px; }
+.sxa-site .sxa-signal-board b { color: #5d5264; font-size: 10px; }
+.sxa-site .sxa-signal-board i { display: block; width: var(--sxa-bar); height: 10px; border-radius: 20px; background: linear-gradient(90deg, #ff724a, #a95cc0); transform-origin: left; }
+.sxa-site .sxa-ai-preview { max-width: 440px; padding: 18px; }
+.sxa-site .sxa-ai-preview > div:first-child { display: flex; align-items: center; gap: 9px; color: #4a3855; font-size: 12px; }
+.sxa-site .sxa-ai-preview > div:first-child span { color: #a15cb9; font-size: 22px; }
+.sxa-site .sxa-ai-preview p { margin: 11px 0 0; color: #665a6e; font-size: 11px; }
+.sxa-site .sxa-ai-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+.sxa-site .sxa-ai-tags span { padding: 6px 8px; border-radius: 6px; background: #f2e8f8; color: #7e4c9a; font-size: 10px; }
+.sxa-site .sxa-progress-panel { max-width: 430px; padding: 16px; }
+.sxa-site .sxa-progress-panel > div:not(.sxa-progress-line) { display: flex; justify-content: space-between; gap: 10px; padding: 8px 0; border-top: 1px solid #efe9f2; font-size: 10px; }
+.sxa-site .sxa-progress-panel b { color: #514658; }
+.sxa-site .sxa-progress-panel i { color: #82459d; font-style: normal; }
+.sxa-site .sxa-progress-line { display: flex; align-items: end; gap: 8px; height: 45px; margin-top: 7px; border-bottom: 1px solid #d7c7df; }
+.sxa-site .sxa-progress-line span { flex: 1; height: 22%; border-radius: 4px 4px 0 0; background: linear-gradient(#b865c9, #e0b5e8); transform-origin: bottom; }
+.sxa-site .sxa-progress-line span:nth-child(2) { height: 36%; }
+.sxa-site .sxa-progress-line span:nth-child(3) { height: 32%; }
+.sxa-site .sxa-progress-line span:nth-child(4) { height: 60%; }
+.sxa-site .sxa-progress-line span:nth-child(5) { height: 73%; }
+.sxa-site .sxa-progress-line span:nth-child(6) { height: 96%; }
+html.sxa-motion .sxa-site .sxa-benefit-card.is-visible .sxa-thread-row { animation: sxa-benefit-rise .55s both; }
+html.sxa-motion .sxa-site .sxa-benefit-card.is-visible .sxa-thread-row:nth-child(3) { animation-delay: .15s; }
+html.sxa-motion .sxa-site .sxa-benefit-card.is-visible .sxa-thread-row:nth-child(4) { animation-delay: .3s; }
+html.sxa-motion .sxa-site .sxa-benefit-card.is-visible .sxa-reply-answer, html.sxa-motion .sxa-site .sxa-benefit-card.is-visible .sxa-ai-tags, html.sxa-motion .sxa-site .sxa-benefit-card.is-visible .sxa-content-sheet div { animation: sxa-benefit-rise .75s both; }
+html.sxa-motion .sxa-site .sxa-benefit-card.is-visible .sxa-signal-board i { animation: sxa-benefit-grow 1.1s both; }
+html.sxa-motion .sxa-site .sxa-benefit-card.is-visible .sxa-progress-line span { animation: sxa-benefit-bar .9s both; }
+html.sxa-motion .sxa-site .sxa-benefit-card.is-visible .sxa-authority-node--center { animation: sxa-benefit-pulse 1.4s both; }
+@keyframes sxa-benefit-rise { from { opacity: 0; transform: translateY(13px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes sxa-benefit-grow { from { transform: scaleX(.05); } to { transform: scaleX(1); } }
+@keyframes sxa-benefit-bar { from { transform: scaleY(.05); } to { transform: scaleY(1); } }
+@keyframes sxa-benefit-pulse { 50% { box-shadow: 0 0 0 9px #a66bc128; } }
+@media (max-width: 900px) {
+  .sxa-site .sxa-benefit-card, .sxa-site .sxa-benefit-card--wide { grid-column: span 3; }
+}
+@media (max-width: 600px) {
+  .sxa-site .sxa-benefits-grid { gap: 13px; }
+  .sxa-site .sxa-benefit-card, .sxa-site .sxa-benefit-card--wide { grid-column: 1 / -1; min-height: 0; }
+  .sxa-site .sxa-benefit-visual { min-height: 190px; }
+  .sxa-site .sxa-benefit-card h3 { font-size: 26px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sxa-site .sxa-benefit-card { transition: none; }
+  html.sxa-motion .sxa-site .sxa-benefit-card.is-visible :is(.sxa-thread-row,.sxa-reply-answer,.sxa-ai-tags,.sxa-content-sheet div,.sxa-signal-board i,.sxa-progress-line span,.sxa-authority-node--center) { animation: none; }
+}
+.sxa-site .sxa-reddit-metric strong { display: block; margin-top: 19px; font-size: clamp(64px, 6vw, 90px); line-height: 1; letter-spacing: -.07em; }
+.sxa-site .sxa-reddit-metric p { margin-top: 13px; color: #6b5d73; font-size: 15px; line-height: 1.6; }
+.sxa-site .sxa-reddit-metric--highlight p { color: #ddd0e4; }
+.sxa-site .sxa-community-feature { grid-template-columns: 1fr; }
+@media (max-width: 760px) {
+  .sxa-site .sxa-reddit-metrics-grid { grid-template-columns: 1fr; }
+  .sxa-site .sxa-reddit-metric { min-height: 0; }
+}

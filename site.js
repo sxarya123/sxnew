@@ -142,7 +142,7 @@
 
   // Reveal editorial sections as they enter view. Pages stay visible if JS is unavailable.
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    const revealNodes = root.querySelectorAll('.sxa-section-head, .sxa-service-card, .sxa-step, .sxa-evidence-feature, .sxa-review, .sxa-plan, .sxa-community-feature, .sxa-community-heading, .sxa-channel-card, .sxa-community-how, .sxa-feature-panel');
+    const revealNodes = root.querySelectorAll('.sxa-section-head, .sxa-benefit-card, .sxa-service-card, .sxa-step, .sxa-evidence-feature, .sxa-story-card, .sxa-story-proof, .sxa-review, .sxa-plan, .sxa-community-feature, .sxa-community-heading, .sxa-channel-card, .sxa-community-how, .sxa-feature-panel');
     if (revealNodes.length) {
       const observer = new IntersectionObserver((entries, activeObserver) => {
         entries.forEach(entry => {
