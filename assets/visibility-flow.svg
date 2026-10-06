@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 420" fill="none">
+  <title>Scale Xpert visibility flow</title>
+  <desc>Content and authority support Scale Xpert's SEO and Reddit visibility offering.</desc>
+  <rect x="1" y="1" width="438" height="418" rx="26" fill="#FFFCFF" fill-opacity=".92" stroke="#DDD0EB"/>
+  <g stroke="#D5C3E6" stroke-width="1.5">
+    <path d="M116 134v34h104m104-34v34H220m0 0v24m-104 106v-38h104m104 38v-38H220m0 0v-24"/>
+    <circle cx="220" cy="168" r="3" fill="#7944A7" stroke="none"/>
+    <circle cx="220" cy="260" r="3" fill="#7944A7" stroke="none"/>
+  </g>
+  <g font-family="Arial,Helvetica,sans-serif" text-anchor="middle">
+    <text x="220" y="38" fill="#7C638F" font-size="11" letter-spacing="2">TWO CHANNELS. ONE FOCUS.</text>
+    <rect x="31" y="63" width="170" height="71" rx="14" fill="#F3EBFB" stroke="#DDC8EF"/>
+    <rect x="239" y="63" width="170" height="71" rx="14" fill="#FFF0E9" stroke="#EED7C9"/>
+    <text x="116" y="115" fill="#452560" font-size="15" font-weight="700">SEO visibility</text>
+    <text x="324" y="115" fill="#6C3826" font-size="15" font-weight="700">Reddit visibility</text>
+    <rect x="81" y="191" width="278" height="46" rx="14" fill="#23162F"/>
+    <text x="220" y="220" fill="#FFF" font-size="19" font-weight="700">Scale Xpert</text>
+    <rect x="31" y="298" width="170" height="71" rx="14" fill="#F5F2FC" stroke="#E1D9EE"/>
+    <rect x="239" y="298" width="170" height="71" rx="14" fill="#EFF5FC" stroke="#CFDEEE"/>
+    <text x="116" y="350" fill="#452560" font-size="15" font-weight="700">Content</text>
+    <text x="324" y="350" fill="#304A6A" font-size="15" font-weight="700">Authority</text>
+    <text x="220" y="398" fill="#7C638F" font-size="12">Visibility on autopilot</text>
+  </g>
+  <g stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#7944A7"><circle cx="113" cy="83" r="6"/><path d="m118 88 6 6"/></g>
+    <g stroke="#B4603C"><path d="M315 78h18a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3h-9l-6 4v-4h-3a3 3 0 0 1-3-3v-9a3 3 0 0 1 3-3Z"/><path d="M319 84h10m-10 4h6"/></g>
+    <g stroke="#7944A7"><rect x="108" y="311" width="16" height="21" rx="2"/><path d="M112 317h8m-8 5h8m-8 5h5"/></g>
+    <g stroke="#5279A6"><path d="m321 322-4 4a5 5 0 0 0 7 7l5-5m-2-10 4-4a5 5 0 0 0-7-7l-5 5m1 12 8-8"/></g>
+  </g>
+</svg>
